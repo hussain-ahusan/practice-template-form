@@ -71,6 +71,18 @@ body {
   box-shadow: none; /* Remove default red glow in Firefox */
 }
 
+.form-row input[type='text']:focus:invalid,
+.form-row input[type='email']:focus:invalid {
+  outline: none;
+  border: 1px solid #D55C5F;
+}
+
+.form-row input[type='text']:focus:valid,
+.form-row input[type='email']:focus:valid {
+  outline: none;
+  border: 1px solid greenyellow
+}
+
 .legacy-form-row {
   border: none;
   margin-bottom: 40px;
